@@ -18,8 +18,6 @@ vector_env_path: "/etc/default/vector"
 vector_user: vector
 vector_group: vector
 
-vector_service_enabled: True
-vector_service_state: started
 
 vector_log_output: journal
 

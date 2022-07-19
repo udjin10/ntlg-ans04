@@ -12,6 +12,6 @@
 - name: VECTOR | Configuring service
   systemd:
     name: vector
-    state: "{{ vector_service_state }}"
-    enabled: "{{ vector_service_enabled }}"
-    daemon_reload: yes
+    state: started
+    enabled: true
+    daemon_reload: true

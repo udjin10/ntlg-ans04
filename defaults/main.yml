@@ -9,7 +9,7 @@ vector_force_reinstall: false
 
 
 vector_bin_path: "/usr/bin"
-vector_skeleton_paths:
+vector_dirs_paths:
   - "{{ vector_bin_path }}"
 vector_exec_name: vector
 vector_env_path: "/etc/default/vector"

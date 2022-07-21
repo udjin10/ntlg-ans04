@@ -16,14 +16,14 @@
     createhome: no
     append: True
 
-- name: VECTOR | Ensure skeleton paths
+- name: VECTOR | Ensure  paths
   file:
     dest: "{{ item }}"
     owner: "{{ vector_user }}"
     group: "{{ vector_group }}"
     state: directory
   with_items:
-    - "{{ vector_skeleton_paths }}"
+    - "{{ vector_dirs_paths }}"
 
 - name: VECTOR | Check vector version
   command: "{{ vector_exec_name }} --version"
